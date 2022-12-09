@@ -6,3 +6,4 @@ const composeEnhancers = composeWithDevTools();
 
 const store = createStore(rootReducer, composeEnhancers);
 export default store;
+
