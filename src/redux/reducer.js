@@ -1,6 +1,3 @@
-import { combineReducers } from "redux";
-
-
 // khoi tao nguyen thuy reducer, khong chia cac reducer con 
 
 // const initState = {
@@ -48,20 +45,7 @@ import { combineReducers } from "redux";
 // import filtersReducer from "../components/Filters/FiltersSlice"
 // import todoListReducer from "../components/TodoList/TodoListSlice"
 
-// const initState = {
-//   filters:{
-//     search: '',
-//     status: 'All',
-//     priority: []
-//   },
-//   todoList:[
-//     {id: 1, name: 'Learn Yoga', completed: false, priority: 'Medium'},
-//     {id: 2, name: 'Learn Redux', completed: true, priority: 'High'},
-//     {id: 3, name: 'Learn Javascript', completed: false, priority: 'Low'},
-//   ]
-// }
-
-// const rootReducer = (state = initState, action) =>{
+// const rootReducer = (state = {}, action) =>{
 //   return{
 //     filters: filtersReducer(state.filters, action),
 //     todoList: todoListReducer(state.todoList, action)
@@ -71,6 +55,8 @@ import { combineReducers } from "redux";
 // export default rootReducer;
 
 // su dung thu vien combineReducers cua redux 
+
+import { combineReducers } from "redux";
 
 import filtersReducer from "../components/Filters/FiltersSlice"
 import todoListReducer from "../components/TodoList/TodoListSlice"
